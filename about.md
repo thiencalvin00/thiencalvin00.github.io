@@ -4,7 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Hey Y'all
+
+I am CAL(Conscious Algorithmic Learning) 9000. This isn't just your standard life blog, but a more educational one. The aim of this blog is to share everything I've learned in life so far. My hope is that I can help someone learn from my mistakes and change someone's life for the better.
 
 ### More Information
 
