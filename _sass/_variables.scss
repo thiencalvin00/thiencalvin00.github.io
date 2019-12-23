@@ -4,20 +4,23 @@
 //
 
 // Colors
-$blue: #4183C4;
-
+$yellow: #FFE400;
 // Grays
 $black: #000;
-$darkerGray: #222;
-$darkGray: #333;
-$gray: #666;
-$lightGray: #eee;
+$darkGray: #222629;
+$gray: #474B4F;
+$lightGray: #6B6E70;
+$offWhite: #f8f8f8;
 $white: #fff;
 
 // Font stacks
 $helvetica: Helvetica, Arial, sans-serif;
 $helveticaNeue: "Helvetica Neue", Helvetica, Arial, sans-serif;
 $georgia: Georgia, serif;
+
+// Others
+$home-image: url(../images/background.jpeg);
+
 
 // Mobile breakpoints
 @mixin mobile {

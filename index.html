@@ -1,18 +1,67 @@
 ---
 layout: default
+title: ENTER MY WORLD
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
+<div class="grid-container">
 
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+  <div class="main-page"> 
+      <h1 class="page-title"> {{ page.title }} </h1>
+  </div>
 
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
+  <div class ="aboimg">
+      <img src="/images/about.jpeg">
+  </div>
+  <div class="about"> 
+    <h1>ABOUT ME</h1>
+      <p>I am CAL(Conscious Algorithmic Learning) 9000. I'm a mechanical engineer working in the tech industry. Outside of work, I involve myself with a multitude of hobbies and interests. 
+        These hobbies include, but are not limited to: fitness and nutrition, motorcycles, snowboarding, finance, traveling, and cooking. 
+      </p> 
+          
+      <p>### About This Blog
+          This isn't just your standard life blog, but a more educational one. The aim of this blog is to share everything I've learned in life so far. My hope is that I can change someone's life for the better.
+      </p> 
+          
+      <p>### Contact me</p>
+      
+      <p>thiencalvin@gmail.com</p>
+  </div>
 
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
+  <div class="posts">
+    {% for post in site.posts%}
+      <article class="post">
+        <img src="{{ post.image | prepend: site.baseurl }}"alt="{{ post.title }}" title="{{ post.title }}">
+        <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
+        <h3>{{ post.date | date_to_string }}</h3>
+        <div class="entry">
+          {{ post.excerpt }}
+        </div>
+
+        <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+      </article>
+    {% endfor %}
+  </div>
+
+  <div class="side"> 
+      <img src="/images/aotw.jpg">
+      <h2> Album of The Week </h2>
+      <p>Sound of Ceres - Nostalgia For Infinity</p>
+      <img src="/images/aotw.jpg">
+      <h2> Last Week's Album </h2>
+      <p>Sound of Ceres - Nostalgia For Infinity</p>
+      <p>8/10 (would listen to again)</p>
+  </div>
 </div>
+
+
+
+<!-- <div class="infinite-spinner"></div> -->
+<script type="text/javascript">
+  $('.posts').infiniteScroll({
+    // options
+    path: '.pagination__next',
+    append: '.post',
+    history: false,
+  });
+</script>
+
