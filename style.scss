@@ -28,12 +28,7 @@ title {
   font-weight: bold;
 
 }
-// .container {
-//   margin: 0;
-//   max-width: 740px;
-//   padding: 0 0px;
-//   width: 100%;
-// }
+
 .grid-container{
   display: grid;
   grid-template-rows: auto;
@@ -213,7 +208,7 @@ img {
   }
 .w3-white,.w3-hover-white:hover{
   color:#000!important;
-  background-color:$lightGray!important
+  background-color:$gray!important
 }
 
  .site-avatar {
@@ -305,8 +300,8 @@ nav {
   height: 50vh;
   // width: 99vw;
   background-image: $home-image;
-  background-size: cover;
-  background-position: center;
+  background-size: contain;
+  background-position: top;
   background-repeat: no-repeat;
   background-attachment: fixed;
   
@@ -322,7 +317,7 @@ nav {
 
 .about{
   grid-area: abo;
-  background-color: $lightGray;
+  // background-color: $gray;
   text-align: center;
   margin-right: 15px;
   margin-top: 15px;
@@ -350,10 +345,14 @@ nav {
 .side{
   grid-area: sidebar;
   width: 400px;
-  background-color: $lightGray;
+  background-color: $gray;
   margin-right: 15px;
   margin-top: 20px;
   max-height: 1025px;
+  box-shadow: 2px 2px 10px 0px $black;
+  // box-shadow:0 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+
+
 
   img{
     max-width: 100%;
@@ -391,8 +390,12 @@ nav {
 .posts > .post {
   padding-bottom: 1em;
   margin-bottom: 10px;
-  background-color: $lightGray;
+  background-color: $gray;
   width: 1200px;
+  box-shadow: 2px 2px 10px 0px $black;
+  // box-shadow:1px 2px 5px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)
+
+
 }
 
 .posts > .post:last-child {
